@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2024-11-05T19:16:41+01:00",
+  "id": "instalacion_Lenovo100e",
+  "duration": 0,
+  "title": "Guía de Bastionado de BIOS/UEFI para Lenovo 100e 2nd Gen (81M8)",
+  "summary": "Codelab de instalación de BIOS/UEFI",
+  "source": "Proyecto1_1.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "instalacion_Lenovo100e"
+}

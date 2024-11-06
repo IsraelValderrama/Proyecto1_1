@@ -1,0 +1,123 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Guía de Bastionado de BIOS/UEFI para Lenovo 100e 2nd Gen (81M8)</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="instalacion_Lenovo100e"
+                  title="Guía de Bastionado de BIOS/UEFI para Lenovo 100e 2nd Gen (81M8)"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Acceso a la de BIOS" duration="0">
+        <ol type="1">
+<li>En el menú desplegable, selecciona &#34;Lenovo 100e 2nd Gen (81M8)&#34;.</li>
+<li>Haz clic en &#34;Launch&#34; para iniciar el simulador.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuración de Seguridad" duration="0">
+        <h2 is-upgraded>2.1 Contraseña de Supervisor</h2>
+<ol type="1">
+<li>Navega a la pestaña <strong>Security</strong>.</li>
+<li>Selecciona <strong>Set Supervisor Password</strong>.</li>
+<li>Introduce una contraseña fuerte y confírmala.</li>
+<li>Habilita <strong>Password at Boot</strong>.</li>
+</ol>
+<pre><code>Security &gt; Set Supervisor Password &gt; [Introduce contraseña]
+Security &gt; Password at Boot &gt; [ Enabled ]
+</code></pre>
+<h2 is-upgraded>2.2 Secure Boot</h2>
+<ol type="1">
+<li>En la pestaña <strong>Security</strong>, busca <strong>Secure Boot</strong>.</li>
+<li>Asegúrate de que esté configurado como <strong>Enabled</strong>.</li>
+</ol>
+<p><code>Security > Secure Boot > [ Enabled ]<br></code></p>
+<p class="image-container"><img alt="Security" src="img\\81ab56810400b8ef.png"></p>
+<h2 is-upgraded>2.3 TPM (Trusted Platform Module)</h2>
+<ol type="1">
+<li>Busca la opción <strong>TPM</strong> o <strong>Security Chip</strong> en la pestaña <strong>Security</strong>.</li>
+<li>Si está disponible, configúralo como <strong>Enabled</strong>.</li>
+</ol>
+<pre><code>Security &gt; Security Chip &gt; [ Enabled ]
+
+Boot &gt; Boot Priority Order &gt;
+[Disco duro interno]
+[Otros dispositivos necesarios]
+
+[Deshabilitar dispositivos externos no esenciales]
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Configuraciones Adicionales de Seguridad" duration="0">
+        <h2 is-upgraded>3.1 USB Boot</h2>
+<ol type="1">
+<li>En la pestaña <strong>Security</strong>, busca opciones relacionadas con USB.</li>
+<li>Deshabilita <strong>USB Boot</strong> si no es necesario.</li>
+</ol>
+<p><code>Security > USB Boot > [ Disabled ]   <br></code></p>
+<p class="image-container"><img alt="DesactivarUSBBoot" src="img\\1de3cf5130e0d878.png"></p>
+<h2 is-upgraded>3.2 Intel AMT (si está disponible)</h2>
+<ol type="1">
+<li>Busca opciones relacionadas con Intel AMT.</li>
+<li>Si no se utiliza, considera deshabilitarlo.</li>
+</ol>
+<p><code>Security > Intel AMT > [Disabled]<br></code></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Guardar y Salir" duration="0">
+        <ol type="1">
+<li>Una vez realizadas todas las configuraciones, navega a la opción <strong>Exit</strong>.</li>
+<li>Selecciona <strong>Save and Exit</strong>.</li>
+<li>Confirma los cambios.</li>
+</ol>
+<p><code>Exit > Save and Exit > [Yes]<br></code></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Verificación" duration="0">
+        <p>Después de reiniciar:</p>
+<ol type="1">
+<li>Vuelve a entrar en la BIOS/UEFI.</li>
+<li>Verifica que todos los cambios se hayan aplicado correctamente.</li>
+<li>Asegúrate de que el sistema arranca normalmente con las nuevas configuraciones.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
